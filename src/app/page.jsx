@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <HomeComp />
-      <div className="flex flex-col sm:flex-row-reverse">
+      <div className="flex flex-col lg:flex-row-reverse">
         <Services />
         <Tests />
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const ServiceComp = ({ text }) => {
   return (
-    <div className="flex gap-5 ">
+    <div className="flex gap-5 items-center ">
       <Image src="/plus.png" height={25} width={25} alt="plus sign" />
       <div>{text}</div>
     </div>

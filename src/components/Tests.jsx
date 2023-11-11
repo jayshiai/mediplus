@@ -1,9 +1,10 @@
 import React from "react";
 import { BiUpArrowAlt } from "react-icons/bi";
 import Image from "next/image";
+import ArrowComp from "./ArrowComp";
 const Tests = () => {
   return (
-    <div className="w-full sm:w-1/3 h-screen montserrat px-4 py-5">
+    <div className="w-full lg:w-1/3 h-screen montserrat px-4 py-5">
       <div className=" relative w-full h-[52%] px-4 py-5 rounded-3xl ">
         <div>
           <div className="text-3xl font-bold">Home Collection</div>
@@ -29,23 +30,17 @@ const Tests = () => {
         <div className="relative text-2xl font-bold row-span-2 rounded-3xl bg-[#E29578] p-4">
           <div>Full Body Test</div>
           <div className="mt-5 text-8xl bigShoulderText font-thin">100%</div>
-          <div className="absolute text-4xl rotate-45 flex justify-center items-center text-black  bottom-4 right-4 h-[50px] w-[50px] rounded-full bg-white">
-            <BiUpArrowAlt />
-          </div>
+          <ArrowComp />
         </div>
         <div className="relative rounded-3xl bg-[#83C5BE] text-2xl font-bold p-4">
           <div>Urine Test</div>
 
-          <div className="absolute text-4xl rotate-45 flex justify-center items-center text-black  bottom-4 right-4 h-[50px] w-[50px] rounded-full bg-white">
-            <BiUpArrowAlt />
-          </div>
+          <ArrowComp />
         </div>
         <div className="relative rounded-3xl bg-black text-2xl font-bold p-4">
           <div>Blood Test</div>
 
-          <div className="absolute text-4xl rotate-45 flex justify-center items-center text-black  bottom-4 right-4 h-[50px] w-[50px] rounded-full bg-white">
-            <BiUpArrowAlt />
-          </div>
+          <ArrowComp />
         </div>
       </div>
     </div>
