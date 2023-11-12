@@ -3,8 +3,38 @@ import React from "react";
 import { BiUpArrowAlt } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 const ContactForm = () => {
+  const { register, handleSubmit } = useForm();
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [selectedOption, setSelectedOption] = useState("none");
+
+  const handleSubmitData = (data) => {
+    setSubmitting(true);
+    console.log("Sending");
+
+    fetch("/api/email", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("SENT");
+      if (res.status === 200) {
+        console.log("SUCCES");
+        setSubmitted(true);
+      }
+    });
+  };
+
+  const onSubmit = (data) => {
+    data.type = selectedOption;
+
+    handleSubmitData(data);
+  };
   const arrowVariant = {
     initial: {
       x: 0,
@@ -39,15 +69,17 @@ const ContactForm = () => {
     },
   };
   return (
-    <form className="w-full h-[55%] lg:h-full flex flex-col lg:text-xl gap-2 lg:gap-6 bg-white px-4 py-2 rounded-3xl">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="w-full h-[55%] lg:h-full flex flex-col lg:text-xl gap-2 lg:gap-6 bg-white px-4 py-2 rounded-3xl"
+    >
       <div className="font-bold text-xl lg:text-3xl">Book an appointment</div>
       <div>Name</div>
       <input
         type="text"
         id="name"
-        name="name"
+        {...register("name", { required: true })}
         placeholder="Enter your name"
-        required
         className="w-full border-[1.5px] border-black h-[30px] max-w-[350px] lg:h-[45px] rounded-full px-4 flex items-center "
       />
       <div className="w-full flex justify-between">
@@ -56,7 +88,7 @@ const ContactForm = () => {
           <input
             type="date"
             id="date"
-            name="date"
+            {...register("date", { required: true })}
             min={new Date().toISOString().split("T")[0]}
             className="w-[80%] border-[1.5px] border-black h-[30px] max-w-[350px] lg:h-[45px] rounded-full px-2 flex items-center"
             required
@@ -72,11 +104,10 @@ const ContactForm = () => {
           <input
             type="time"
             id="time"
-            name="time"
-            min="9:00"
+            {...register("time", { required: true })}
+            min="09:00"
             max="18:00"
             className="w-[80%] border-[1.5px] border-black h-[30px] max-w-[350px] lg:h-[45px] rounded-full px-2 flex items-center"
-            required
           />
           {/* <div className="w-[80%] border-[1.5px] border-black h-[30px] max-w-[350px] lg:h-[45px] rounded-full px-2 flex items-center">
             <div className="opacity-50">Enter time</div>
@@ -87,9 +118,8 @@ const ContactForm = () => {
       <input
         type="tel"
         id="phone"
-        name="phone"
+        {...register("phone", { required: true })}
         placeholder="Enter your contact number"
-        required
         className="w-full border-[1.5px] border-black h-[30px] max-w-[350px] lg:h-[45px] rounded-full px-4 flex items-center "
       />
       {/* <div className="w-full border-[1.5px] border-black h-[30px] max-w-[350px] lg:h-[45px] rounded-full px-2 flex items-center ">
@@ -122,7 +152,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 relative flex justify-between font-bold items-center mt-2 max-w-[250px] h-[45px] lg:h-[90px] bg-[#83C5BE] rounded-full lg:rounded-3xl pl-6 pr-2 lg:pr-6">
+      <button className="w-1/2 relative flex justify-between font-bold items-center mt-2 max-w-[250px] h-[45px] lg:h-[90px] bg-[#83C5BE] rounded-full lg:rounded-3xl pl-6 pr-2 lg:pr-6">
         <div> Submit</div>
         <motion.div
           initial="static"
@@ -136,7 +166,7 @@ const ContactForm = () => {
             <BiUpArrowAlt />
           </motion.div>
         </motion.div>
-      </div>
+      </button>
     </form>
   );
 };
