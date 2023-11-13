@@ -13,7 +13,7 @@ const Tests = () => {
             Many tests require the patient to fast for a certain number of hours
             the night before. And some may require you to drink plenty of water
             and similar other preparations. Hence, it is a good idea to call
-            ahead and let them know when you'll be coming in to avoid
+            ahead and let them know when you&apos;ll be coming in to avoid
             disappointments.
           </div>
         </div>

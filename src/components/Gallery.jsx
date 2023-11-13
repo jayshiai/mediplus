@@ -27,21 +27,46 @@ const Gallery = () => {
     });
   }, []);
   return (
-    <div class="container w-full">
+    <div className="container w-full">
       <div className="relative imageContainer">
-        <Image fill={true} className="img object-cover" src="/1.jpeg" alt="" />
+        <Image
+          fill={true}
+          className="img object-cover"
+          src="/1.jpeg"
+          alt="clinic image"
+        />
       </div>
       <div className="relative imageContainer">
-        <Image fill={true} className="img object-cover" src="/2.jpeg" alt="" />
+        <Image
+          fill={true}
+          className="img object-cover"
+          src="/2.jpeg"
+          alt="clinic image"
+        />
       </div>
       <div className="relative imageContainer">
-        <Image fill={true} className="img object-cover" src="/3.jpeg" alt="" />
+        <Image
+          fill={true}
+          className="img object-cover"
+          src="/3.jpeg"
+          alt="clinic image"
+        />
       </div>
       <div className="relative imageContainer">
-        <Image fill={true} className="img object-cover" src="/4.jpeg" alt="" />
+        <Image
+          fill={true}
+          className="img object-cover"
+          src="/4.jpeg"
+          alt="clinic image"
+        />
       </div>
       <div className="relative imageContainer">
-        <Image fill={true} className="img object-cover" src="/5.jpeg" alt="" />
+        <Image
+          fill={true}
+          className="img object-cover"
+          src="/5.jpeg"
+          alt="clinic image"
+        />
       </div>
     </div>
   );
