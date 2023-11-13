@@ -1,6 +1,7 @@
 import React from "react";
 import { BiUpArrowAlt } from "react-icons/bi";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import ArrowComp from "./ArrowComp";
 const Tests = () => {
   return (
@@ -16,9 +17,19 @@ const Tests = () => {
             disappointments.
           </div>
         </div>
-        <div className="absolute bottom-10 flex justify-center items-center text-white font-bold w-4/5 h-[50px] bg-[#006D77] rounded-3xl">
+        <motion.a
+          href="#contact"
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          className="absolute bottom-10 flex justify-center items-center text-white font-bold w-4/5 h-[50px] bg-[#006D77] rounded-3xl"
+        >
           Call us for Home Collection
-        </div>
+        </motion.a>
         <Image
           src="/blue_bg.jpg"
           fill={true}

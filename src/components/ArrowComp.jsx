@@ -37,7 +37,8 @@ const ArrowComp = () => {
     },
   };
   return (
-    <motion.div
+    <motion.a
+      href="#contact"
       initial="static"
       whileHover="animate"
       whileTap="tapped"
@@ -48,7 +49,7 @@ const ArrowComp = () => {
       <motion.div variants={arrowVariant}>
         <BiUpArrowAlt />
       </motion.div>
-    </motion.div>
+    </motion.a>
   );
 };
 

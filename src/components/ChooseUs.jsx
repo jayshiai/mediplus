@@ -46,11 +46,25 @@ const ChooseUs = () => {
           className="absolute object-cover rounded-3xl -z-10"
         />
       </div>
-      <div className="relative h-[45%] lg:pl-5 lg:h-full w-full lg:1/3  lg:w-1/2 flex flex-col items-start gap-4">
-        <div className="w-full lg:w-2/3 h-[21%] lg:h-[25%] bg-gray-300 rounded-xl"></div>
-        <div className="w-full lg:w-2/3 lg:translate-x-[50%] h-[21%] lg:h-[25%] bg-gray-300 rounded-xl"></div>
-        <div className="w-full lg:w-2/3 h-[21%] lg:h-[25%] bg-gray-300 rounded-xl"></div>
-        <div className="w-full lg:w-2/3 lg:translate-x-[50%] h-[21%] lg:h-[25%] bg-gray-300 rounded-xl"></div>
+      <div className="relative montserrat h-[45%] lg:pl-5 lg:h-full w-full lg:1/3  lg:w-1/2 flex flex-col items-start gap-4">
+        <div className="w-full flex justify-center items-center text-white px-4 py-2  font-medium lg:w-2/3 h-[21%] lg:h-[25%] bg-black rounded-xl">
+          Best pathology blood collection home visit service available
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+        </div>
+        <div className="w-full flex justify-center items-center font-medium px-4 py-2  lg:w-2/3 lg:translate-x-[50%] h-[21%] lg:h-[25%] bg-gray-300 rounded-xl">
+          Best pathology and dynastics centre in Ansal Avadh vihar Yojana{"   "}
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+        </div>
+        <div className="w-full flex text-white font-medium justify-center items-center px-4  py-2 lg:w-2/3  min-h-[21%] lg:min-h-[25%] bg-black rounded-xl">
+          This pathology has a wide range of medical specialists, making it a
+          one-stop-shop for healthcare needs. I appreciate the convenience.
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+        </div>
+        <div className="w-full flex justify-center items-center font-medium px-4 py-2  lg:w-2/3 lg:translate-x-[50%] min-h-[21%] lg:min-h-[25%] bg-gray-300 rounded-xl">
+          The doctors at this hospital are top-notch. They explained everything
+          clearly and took excellent care of me during my stay
+          &#9733;&#9733;&#9733;&#9733;&#9733;
+        </div>
       </div>
     </div>
   );

@@ -109,7 +109,7 @@ const HomeComp = () => {
             <div className="text-2xl text-[#E29578]  whitespace-nowrap">
               Call Us
             </div>
-            <div className="text-lg whitespace-nowrap">+91-8459967632</div>
+            <div className="text-lg whitespace-nowrap">+91 8887865442</div>
           </div>
           <div className=" font-mono font-black ">
             <div className="text-2xl text-[#E29578] whitespace-nowrap">

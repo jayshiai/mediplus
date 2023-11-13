@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "MediPlus",
-  description: "Pathology",
+  title: "Paras Pathology",
+  description: "Pathology and Diagnostics Center",
 };
 
 export default function RootLayout({ children }) {
