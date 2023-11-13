@@ -3,7 +3,7 @@ import ContactForm from "./ContactForm";
 
 const ContactUs = () => {
   return (
-    <div id="contact" className="h-screen w-full px-4 py-5">
+    <div id="contact" className="h-screen min-h-[900px] w-full px-4 py-5">
       <div className="w-full h-[95%] flex flex-col lg:flex-row-reverse gap-4 bg-[#EDF6F9] px-4 py-5 montserrat rounded-3xl">
         <div className="text-3xl font-bold lg:hidden">Contact Us</div>
         <ContactForm />

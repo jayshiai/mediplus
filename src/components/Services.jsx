@@ -9,7 +9,7 @@ import ImageComponent from "./ImageComponent";
 const MotionImage = motion(ImageComponent);
 const Services = () => {
   return (
-    <div className="h-screen w-full lg:w-2/3 montserrat px-4 py-5 ">
+    <div className="h-screen min-h-[900px] w-full lg:w-2/3 montserrat px-4 py-5 ">
       <div className=" relative w-full   h-[90%] overflow-hidden  px-4 py-5 rounded-3xl flex flex-col md:flex-row">
         <div className=" absolute -top-2 right-0 md:max-lg:bottom-0  scale-50">
           <div className="w-full h-full flex justify-center items-center relative">

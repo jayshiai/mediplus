@@ -3,7 +3,7 @@ import Image from "next/image";
 import ServiceComp from "./ServiceComp";
 const ChooseUs = () => {
   return (
-    <div className="relative h-screen w-full lg:h-[50vh] flex flex-col lg:flex-row lg:justify-between items-center gap-4 monserrat px-4 py-5">
+    <div className="relative h-screen min-h-[900px] w-full lg:h-[50vh] flex flex-col lg:flex-row lg:justify-between items-center gap-4 monserrat px-4 py-5">
       <div className="relative w-full lg:w-2/3   h-[45%] lg:h-full rounded-3xl px-4 py-5">
         <div className="text-white text-4xl font-bold">Why choose us?</div>
         <div className="mt-6 flex font-bold flex-col gap-5">
