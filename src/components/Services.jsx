@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import ServiceComp from "./ServiceComp";
 import ArrowComp from "./ArrowComp";
 
-const Component = React.forwardRef((props, ref) => (
+const ImageComponent = React.forwardRef((props, ref) => (
   <Image {...props} ref={ref} />
 ));
-const MotionImage = motion(Component);
+const MotionImage = motion(ImageComponent);
 const Services = () => {
   return (
     <div className="h-screen w-full lg:w-2/3 montserrat px-4 py-5 ">

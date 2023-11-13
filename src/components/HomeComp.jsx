@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const Component = React.forwardRef((props, ref) => (
+const ImageComponent = React.forwardRef((props, ref) => (
   <Image {...props} ref={ref} />
 ));
-const MotionImage = motion(Component);
+const MotionImage = motion(ImageComponent);
 const HomeComp = () => {
   return (
     <div className="w-full h-[90vh] sm:h-[50vh]  ">
