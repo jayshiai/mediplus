@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ImageComponent = React.forwardRef((props, ref) => (
-  <Image {...props} ref={ref} />
-));
+import ImageComponent from "./ImageComponent";
 const MotionImage = motion(ImageComponent);
 const HomeComp = () => {
   return (

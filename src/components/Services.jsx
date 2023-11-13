@@ -5,9 +5,7 @@ import { motion } from "framer-motion";
 import ServiceComp from "./ServiceComp";
 import ArrowComp from "./ArrowComp";
 
-const ImageComponent = React.forwardRef((props, ref) => (
-  <Image {...props} ref={ref} />
-));
+import ImageComponent from "./ImageComponent";
 const MotionImage = motion(ImageComponent);
 const Services = () => {
   return (
