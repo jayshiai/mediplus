@@ -107,13 +107,14 @@ const HomeComp = () => {
             <div className="text-2xl text-[#E29578]  whitespace-nowrap">
               Call Us
             </div>
-            <div className="text-lg whitespace-nowrap">+91 8887865442</div>
+            <div className="text-2xl whitespace-nowrap">8887865442</div>
+            <div className="text-2xl whitespace-nowrap">8957130180</div>
           </div>
           <div className=" font-mono font-black ">
             <div className="text-2xl text-[#E29578] whitespace-nowrap">
               Find Us
             </div>
-            <div className="text-lg whitespace-nowrap">Ansal, UP</div>
+            <div className="text-2xl whitespace-nowrap">Ansal, UP</div>
           </div>
         </div>
       </div>
@@ -138,10 +139,16 @@ const HomeComp = () => {
             className="absolute bottom-5 left-5"
           />
         </div>
-        <div className="absolute bottom-9 right-2 w-[160px] h-[150px] rounded-3xl bg-four  montserrat font-bold  text-black p-2">
-          <p className="text-3xl ">Blood Tests</p>
-          <p className="absolute bottom-4 text-3xl text-red-500">AB+</p>
-          <div className="absolute bottom-2 right-2 w-[50px] h-[50px] rounded-full bg-white"></div>
+        <div className="absolute top-9 right-1 w-[160px] h-[130px]  rounded-3xl bg-five  montserrat font-bold  text-black p-2">
+          <p className="text-xl">X-Ray</p>
+          <p className="text-xl">Ultrasound</p>
+          <p className="text-xl">ECG</p>
+        </div>
+        <div className="absolute bottom-9 right-2 w-[160px] h-[100px] flex items-center rounded-3xl bg-four  montserrat font-bold  text-black p-2">
+          <p className="text-2xl ">Blood Tests</p>
+          <div className="min-w-[50px] h-[50px] flex justify-center items-center rounded-full bg-white">
+            AB+
+          </div>
         </div>
       </div>
     </div>

@@ -1,13 +1,15 @@
 import React from "react";
 import ContactForm from "./ContactForm";
+import Image from "next/image";
+import Link from "next/link";
 
 const ContactUs = () => {
   return (
     <div
       id="contact"
-      className="h-screen min-h-[900px] lg:min-h-[600px] w-full px-4 py-5"
+      className="h-screen min-h-[1000px] lg:min-h-[600px] w-full px-4 py-5"
     >
-      <div className="w-full h-[95%] flex flex-col lg:flex-row-reverse gap-4 bg-five px-4 py-5 montserrat rounded-3xl">
+      <div className="relative w-full h-[95%] flex flex-col lg:flex-row-reverse gap-4 bg-five px-4 py-5 montserrat rounded-3xl">
         <div className="text-3xl font-bold lg:hidden">Contact Us</div>
         <ContactForm />
         <div className="flex flex-col gap-4 w-full">
@@ -27,6 +29,16 @@ const ContactUs = () => {
               Ansal API, Lucknow, UP, 226030
             </div>
           </div>
+        </div>
+        <div className="block md:absolute bottom-4 left-4">
+          Developed By
+          <Link
+            href="https://jayshiai.github.io/"
+            target="_blank"
+            className="bg-black flex justify-center items-center h-[50px]  rounded-xl px-4 "
+          >
+            <Image src="/three_dubs.svg" height={75} width={150} />
+          </Link>
         </div>
       </div>
     </div>

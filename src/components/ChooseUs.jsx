@@ -5,7 +5,7 @@ const ChooseUs = () => {
   return (
     <div className="relative h-screen min-h-[900px] lg:min-h-[500px] w-full lg:h-[50vh] flex flex-col lg:flex-row lg:justify-between items-center gap-4 monserrat px-4 py-5">
       <div className="relative w-full lg:w-2/3   h-[45%] lg:h-full rounded-3xl px-4 py-5">
-        <div className="text-white text-4xl font-bold">Why choose us?</div>
+        <div className=" text-4xl font-bold">Why choose us?</div>
         <div className="mt-6 flex font-bold flex-col gap-5">
           <div className="w-full min-h-[25%] max-h-[40px]">
             <div className="py-2 px-4 w-fit sm:w-[50%] sm:text-xl bg-one lg:text-2xl text-white rounded-xl">
@@ -40,7 +40,7 @@ const ChooseUs = () => {
           </div>
         </div>
         <Image
-          src="/navy_bg.jpg"
+          src="/main_bg.jpg"
           fill={true}
           alt="background image with clinical equipment"
           className="absolute object-cover rounded-3xl -z-10"

@@ -15,22 +15,22 @@ const ImageVid = () => {
     return () => clearInterval(intervalId);
   }, []);
   return (
-    <div className="w-full h-[50vh] px-4 py-5">
-      <div className="relative overflow-hidden bg-two h-full w-full rounded-3xl">
+    <div className="w-full flex justify-center md:justify-end h-[50vh] px-4 py-5">
+      <div className="relative overflow-hidden bg-two h-full w-full max-w-[700px] rounded-3xl">
         <AnimatePresence>
           <MotionImage
             key={image}
             initial={{
-              scale: 0,
+              x: "100%",
             }}
             animate={{
-              scale: 1,
+              x: "0%",
             }}
             transition={{
               duration: 1,
             }}
             exit={{
-              filter: "blur(10px)",
+              x: "-100%",
             }}
             src={"/" + image + ".jpeg"}
             fill={true}
