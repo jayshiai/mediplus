@@ -27,7 +27,7 @@ const Gallery = () => {
     });
   }, []);
   return (
-    <div className="container w-full">
+    <div className="imgMaincontainer w-full">
       <div className="relative imageContainer">
         <Image
           fill={true}

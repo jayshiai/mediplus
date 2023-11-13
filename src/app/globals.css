@@ -32,14 +32,14 @@ html {
   font-family: "Big Shoulders Text", sans-serif;
 }
 
-.container {
+.imgMaincontainer {
   height: 400px;
   aspect-ratio: 1.5 / 1;
   display: flex;
   overflow: hidden;
 }
 
-.container:has(.imageContainer.active) .imageContainer:not(.active) {
+.imgMaincontainer:has(.imageContainer.active) .imageContainer:not(.active) {
   filter: grayscale(100%);
 }
 
