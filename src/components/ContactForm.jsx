@@ -182,7 +182,7 @@ const ContactForm = () => {
                 onClick={() => setSelectedOption("Appointment")}
                 className={`${
                   selectedOption === "Appointment"
-                    ? "bg-[#E29578] text-white"
+                    ? "bg-two text-white"
                     : "border-2 border-[#E29578] text-[#E29578]"
                 } flex justify-center items-center w-full h-[30px] max-w-[350px] lg:h-[45px]  font-bold  rounded-full cursor-pointer`}
               >
@@ -190,7 +190,7 @@ const ContactForm = () => {
               </div>
             </div>
           </div>
-          <button className="w-1/2 relative flex gap-2 justify-between font-bold items-center mt-2 min-w-fit  max-w-[250px] h-[45px] lg:h-[90px] bg-[#83C5BE] rounded-full lg:rounded-3xl pl-6 pr-2 lg:pr-6">
+          <button className="w-1/2 relative flex gap-2 justify-between font-bold items-center mt-2 min-w-fit  max-w-[250px] h-[45px] lg:h-[90px] bg-one rounded-full lg:rounded-3xl pl-6 pr-2 lg:pr-6">
             <div> {submitting ? "Submitting" : "Submit"}</div>
             <motion.div
               initial="static"

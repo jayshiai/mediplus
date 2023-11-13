@@ -103,7 +103,7 @@ const Services = () => {
         </div>
         <div className="h-fit md:h-[80%] md:w-1/2 flex flex-col lg:justify-end">
           <div className="w-full   lg:w-[300px] xl:w-[380px]  h-[100px] md:h-[200px] text-white">
-            <div className="relative w-full h-full mt-10 bg-[#83C5BE] rounded-2xl p-2">
+            <div className="relative w-full h-full mt-10 bg-one rounded-2xl p-2">
               <div className="text-xl sm:text-2xl font-bold">
                 Covid and Post Covid Care
               </div>

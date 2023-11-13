@@ -38,12 +38,12 @@ const Tests = () => {
         />
       </div>
       <div className=" w-full h-[35%] grid grid-rows-2 grid-cols-2 gap-3 montserrat text-white mt-5">
-        <div className="relative text-2xl font-bold row-span-2 rounded-3xl bg-[#E29578] p-4">
+        <div className="relative text-2xl font-bold row-span-2 rounded-3xl bg-two p-4">
           <div>Full Body Test</div>
           <div className="mt-5 text-8xl bigShoulderText font-thin">100%</div>
           <ArrowComp />
         </div>
-        <div className="relative rounded-3xl bg-[#83C5BE] text-2xl font-bold p-4">
+        <div className="relative rounded-3xl bg-one text-2xl font-bold p-4">
           <div>Urine Test</div>
 
           <ArrowComp />

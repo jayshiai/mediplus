@@ -6,6 +6,7 @@ import HomeComp from "@/components/HomeComp";
 import ChooseUs from "@/components/ChooseUs";
 import ContactUs from "@/components/ContactUs";
 import Gallery from "@/components/Gallery";
+import ImageVid from "@/components/ImageVid";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Tests />
       </div>
       <ChooseUs />
-      <Gallery />
+      <ImageVid />
       <ContactUs />
       <a
         href="#contact"

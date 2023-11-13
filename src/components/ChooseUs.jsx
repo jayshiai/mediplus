@@ -8,22 +8,22 @@ const ChooseUs = () => {
         <div className="text-white text-4xl font-bold">Why choose us?</div>
         <div className="mt-6 flex font-bold flex-col gap-5">
           <div className="w-full min-h-[25%] max-h-[40px]">
-            <div className="py-2 px-4 w-fit sm:w-[50%] sm:text-xl bg-[#83C5BE] lg:text-2xl text-white rounded-xl">
+            <div className="py-2 px-4 w-fit sm:w-[50%] sm:text-xl bg-one lg:text-2xl text-white rounded-xl">
               <ServiceComp text="Hygienic & Friendly " />
             </div>
           </div>
           <div className="w-full min-h-[25%] max-h-[40px] flex justify-end items-center">
-            <div className="py-2 px-4 w-fit sm:w-1/2 sm:text-xl bg-[#E29578] lg:text-2xl text-white rounded-xl">
+            <div className="py-2 px-4 w-fit sm:w-1/2 sm:text-xl bg-two lg:text-2xl text-white rounded-xl">
               <ServiceComp text="Advance Equipments" />
             </div>
           </div>
           <div className="w-full min-h-[25%] max-h-[40px]">
-            <div className="py-2 px-4 w-fit sm:w-1/2 sm:text-xl bg-[#EDF6F9] lg:text-2xl text-black rounded-xl">
+            <div className="py-2 px-4 w-fit sm:w-1/2 sm:text-xl bg-five lg:text-2xl text-black rounded-xl">
               <ServiceComp text="Modern Techniques" />
             </div>
           </div>
           <div className="w-full h-fit flex justify-end">
-            <div className="py-1 px-4 min-w-[230px] sm:w-1/2 sm:text-xl lg:text-2xl  bg-[#FFDDD2] text-black rounded-xl">
+            <div className="py-1 px-4 min-w-[230px] sm:w-1/2 sm:text-xl lg:text-2xl  bg-four text-black rounded-xl">
               <div className="flex justify-start items-center gap-5">
                 <Image
                   src="/plus.png"

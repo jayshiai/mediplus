@@ -19,7 +19,7 @@ const HomeComp = () => {
           </div>
           <div className="md:mt-4 montserrat text-4xl md:text-5xl xl:text-7xl text-center sm:text-left">
             <span className="font-bold tracking-wider">
-              <span className="bg-[#83C5BE] rounded-3xl "> your </span>
+              <span className="bg-one rounded-3xl "> your </span>
               health
             </span>{" "}
           </div>
@@ -113,13 +113,13 @@ const HomeComp = () => {
             <div className="text-2xl text-[#E29578] whitespace-nowrap">
               Find Us
             </div>
-            <div className="text-lg whitespace-nowrap">Arjunganj, UP</div>
+            <div className="text-lg whitespace-nowrap">Ansal, UP</div>
           </div>
         </div>
       </div>
 
       <div className="relative sm:hidden w-full h-[40vh]">
-        <div className="absolute top-10 left-2 w-[160px] h-[160px] rounded-3xl bg-[#83C5BE]  montserrat font-bold  text-black p-2">
+        <div className="absolute top-10 left-2 w-[160px] h-[160px] rounded-3xl bg-one  montserrat font-bold  text-black p-2">
           <p className="text-2xl ">Home Collection</p>
           <div className="absolute bottom-2 w-[50px] h-[50px] rounded-full bg-white"></div>
         </div>
@@ -138,7 +138,7 @@ const HomeComp = () => {
             className="absolute bottom-5 left-5"
           />
         </div>
-        <div className="absolute bottom-9 right-2 w-[160px] h-[150px] rounded-3xl bg-[#FFDDD2]  montserrat font-bold  text-black p-2">
+        <div className="absolute bottom-9 right-2 w-[160px] h-[150px] rounded-3xl bg-four  montserrat font-bold  text-black p-2">
           <p className="text-3xl ">Blood Tests</p>
           <p className="absolute bottom-4 text-3xl text-red-500">AB+</p>
           <div className="absolute bottom-2 right-2 w-[50px] h-[50px] rounded-full bg-white"></div>

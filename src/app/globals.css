@@ -28,6 +28,22 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+.bg-one {
+  background-color: #83c5be;
+}
+.bg-two {
+  background-color: #e29578;
+}
+.bg-three {
+  background-color: #edf6f9;
+}
+.bg-four {
+  background-color: #ffddd2;
+}
+.bg-five {
+  background-color: #edf6f9;
+}
+
 .bigShoulderText {
   font-family: "Big Shoulders Text", sans-serif;
 }
