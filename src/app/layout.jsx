@@ -3,7 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 export const metadata = {
   title: "Paras Pathology",
-  description: "Pathology and Diagnostics Center",
+  description: "Pathology and Diagnostics Center in Lucknow",
 };
 
 export default function RootLayout({ children }) {

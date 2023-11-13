@@ -32,6 +32,7 @@ const ImageVid = () => {
             exit={{
               x: "-100%",
             }}
+            alt="clinc images"
             src={"/" + image + ".jpeg"}
             fill={true}
             className="rounded-3xl object-cover"

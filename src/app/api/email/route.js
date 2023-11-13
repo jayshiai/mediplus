@@ -4,11 +4,12 @@ export const POST = async (req) => {
   let nodemailer = require("nodemailer");
 
   const PASSWORD = process.env.password;
+
   const transporter = nodemailer.createTransport({
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: "paraspathologymailer@gmail.com",
+      user: "tantrafiestadummymailer@gmail.com",
       pass: PASSWORD,
     },
     secure: true,
@@ -26,7 +27,7 @@ export const POST = async (req) => {
     });
   });
   const mailData = {
-    from: "paraspathologymailer@gmail.com",
+    from: "tantrafiestadummymailer@gmail.com",
     to: "jayvardhanpatil7811@gmail.com",
     subject: `Appointment Booking by ${data.name}`,
     text: data.type + " | Phone no: " + data.phone,
