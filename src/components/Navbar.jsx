@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <div className="w-full px-10   ">
         <div className="  h-[10vh] flex justify-center sm:justify-between items-center">
-          <div className="text-4xl flex flex-col items-center md:items-start font-black inter tracking-wider uppercase cursor-cell">
+          <div className="text-4xl bg-white rounded-xl px-4 py-2 flex flex-col items-center md:items-start font-black inter tracking-wider uppercase cursor-cell">
             <div>Paras</div>
             <div className="text-xs whitespace-nowrap">
               Pathology and Diagnostic Center
